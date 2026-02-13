@@ -41,5 +41,17 @@ def main():
     print("enterprise_name: " + res.ENTerprise_Name)
     print("enterprise_phone: " + res.PHONE_NUMBER)
 
+    mng = EnterpriseManager()
+    res = mng.ReadproductcodefromJSON("test2.json")
+    strRes = res.__str__()
+    print(strRes)
+    EncodeRes = Encode(strRes)
+    print("Encoded Res " + EncodeRes)
+    DecodeRes = Decode(EncodeRes)
+    print("Decoded Res: " + DecodeRes)
+    print("cif: " + res.ENTERPRISE_CIF)
+    print("enterprise_name: " + res.ENTerprise_Name)
+    print("enterprise_phone: " + res.PHONE_NUMBER)
+
 if __name__ == "__main__":
     main()
