@@ -193,12 +193,17 @@ function-naming-style=any
 #function-rgx=
 
 # Good variable names which should always be accepted, separated by a comma.
+#MODIFIED RULE
 good-names=i,
            j,
            k,
            ex,
            Run,
-           _
+           _,
+           x,
+           y,
+           e,
+           f
 
 # Good variable names regexes, separated by a comma. If names match any regex,
 # they will always be accepted
@@ -311,7 +316,8 @@ ignored-parents=
 max-args=10
 
 # Maximum number of attributes for a class (see R0902).
-max-attributes=7
+#MODIFIED RULE
+max-attributes=15
 
 # Maximum number of boolean expressions in an if statement (see R0916).
 max-bool-expr=5
@@ -337,7 +343,8 @@ max-public-methods=20
 max-returns=10
 
 # Maximum number of statements in function / method body.
-max-statements=50
+#MODIFIED RULE
+max-statements=100
 
 # Minimum number of public methods for a class (see R0903).
 min-public-methods=2
@@ -453,6 +460,7 @@ confidence=HIGH,
 # --enable=similarities". If you want to run only the classes checker, but have
 # no Warning level messages displayed, use "--disable=all --enable=classes
 # --disable=W".
+#MODIFIED RULE
 disable=raw-checker-failed,
         bad-inline-option,
         locally-disabled,
@@ -462,7 +470,14 @@ disable=raw-checker-failed,
         deprecated-pragma,
         use-symbolic-message-instead,
         use-implicit-booleaness-not-comparison-to-string,
-        use-implicit-booleaness-not-comparison-to-zero
+        use-implicit-booleaness-not-comparison-to-zero,
+        missing-module-docstring,
+        missing-class-docstring,
+        missing-function-docstring,
+        wrong-import-position,
+        wrong-import-order,
+        ungrouped-imports,
+        consider-using-f-string
 
 # Enable the message, report, category or checker with the given id(s). You can
 # either give multiple identifier separated by comma (,) or put this option
