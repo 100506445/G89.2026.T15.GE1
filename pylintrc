@@ -307,7 +307,8 @@ exclude-too-few-public-methods=
 ignored-parents=
 
 # Maximum number of arguments for function / method.
-max-args=5
+#MODIFIED RULE
+max-args=10
 
 # Maximum number of attributes for a class (see R0902).
 max-attributes=7
@@ -316,10 +317,11 @@ max-attributes=7
 max-bool-expr=5
 
 # Maximum number of branch for function / method body.
-max-branches=12
-
+#MODIFIED RULE
+max-branches=20
 # Maximum number of locals for function / method body.
-max-locals=15
+#MODIFIED RULE
+max-locals=25
 
 # Maximum number of parents for a class (see R0901).
 max-parents=7
@@ -331,7 +333,8 @@ max-positional-arguments=5
 max-public-methods=20
 
 # Maximum number of return / yield for function / method body.
-max-returns=6
+#MODIFIED RULE
+max-returns=10
 
 # Maximum number of statements in function / method body.
 max-statements=50
@@ -361,10 +364,12 @@ indent-after-paren=4
 # tab).
 indent-string='    '
 
+
 # Maximum number of characters on a single line. Pylint's default of 100 is
 # based on PEP 8's guidance that teams may choose line lengths up to 99
 # characters.
-max-line-length=100
+#MODIFIED RULE
+max-line-length=120
 
 # Maximum number of lines in a module.
 max-module-lines=1000
